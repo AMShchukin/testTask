@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option go_package = "proto/gen;gen";
+
+package proto;
+
+service TransferBoxApi {
+rpc GetSortPointId(GetSortPointIdRequest) returns (GetSortPointIdResponse) {}
+}
+
+message GetSortPointIdRequest {
+int64 dstOfficeId = 1;
+}
+
+message GetSortPointIdResponse {
+int64 sortPointId = 1;
+}

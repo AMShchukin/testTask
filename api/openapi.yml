@@ -1,0 +1,27 @@
+openapi: 3.0.3
+info:
+  title: API для работы с СЦ
+  description: API для работы с СЦ
+  version: 1.0.0
+components:
+  schemas:
+    SaveSortPointIdForDstOfficeRequest:
+      type: object
+      properties:
+        sortPointId:
+          type: integer
+        dstOfficeId:
+          type: integer
+paths:
+  "/office":
+    post:
+      summary: Save sort point for destination office
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SaveSortPointIdForDstOfficeRequest"
+      responses:
+        "200":
+          description: Sort point was saved successfully
