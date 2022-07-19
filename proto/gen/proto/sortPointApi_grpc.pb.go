@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.2.0
 // - protoc             v3.21.2
-// source: proto/SortPointApi.proto
+// source: proto/sortPointApi.proto
 
 package gen
 
@@ -101,5 +101,5 @@ var TransferBoxApi_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "proto/SortPointApi.proto",
+	Metadata: "proto/sortPointApi.proto",
 }
